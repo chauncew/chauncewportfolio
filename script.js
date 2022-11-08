@@ -3,10 +3,9 @@ gsap.registerPlugin(ScrollTrigger);
 
 const tl = gsap.timeline()
 tl
-.from(".crimson", {yPercent: -100})
+.from(".about-section", {yPercent: -100})
 .from(".green", {xPercent: 100})
 .from(".blue", {yPercent: -100})
-.from(".teal", {xPercent: -100})
 
 ScrollTrigger.create({
     animation: tl,
