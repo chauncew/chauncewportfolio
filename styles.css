@@ -102,7 +102,11 @@
 .logo {
     margin-top: 50px;
     font-size: clamp(0.9rem, 2vw, 1.5rem);
-    letter-spacing: 3px;
+}
+
+.logo h2 {
+    font-family: 'Trade Winds', sans-serif;
+    font-weight: 100;
 }
 
 nav {
@@ -154,11 +158,12 @@ video {
 
 .landing-info img {
     width: clamp(10rem, 20vw, 25rem);
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .landing-info p {
     font-size: clamp(1.8rem, 2.5vw, 3rem);
+    line-height: 1.3;
 }
 
 .pc-info {
@@ -199,6 +204,7 @@ video {
     padding-top: 50px;
     margin-left: 10%;
     font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+    font-family: 'Reggae One', sans-serif;
 }
 
 .about-info {
@@ -208,21 +214,114 @@ video {
     line-height: 1.5;
     margin-left: 10%;
     position: relative;
+    letter-spacing: 1.3px;
 }
 
 .about-section img {
-    width: clamp(10rem, 20vw, 30rem);
+    width: clamp(10rem, 20vw, 40rem);
     position: absolute;
-    top: 40%;
+    top: 45%;
     right: 40%;
 }
 
-.box2 {
-    background: url('./images/about-background.jpg')center center/cover no-repeat;
-    overflow: hidden;
+.about-icon {
+    font-size: clamp(1.2rem, 2.5vw, 2rem);
+    font-family: 'Reggae One', sans-serif;
 }
 
-.box2:after {
+.html {
+    position: absolute;
+    top: 5%;
+    left: 45%;
+}
+
+.css {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
+.css {
+    position: absolute;
+    top: 8%;
+    right: 10%;
+}
+
+.javaScript {
+    position: absolute;
+    bottom: 5%;
+    right: 15%;
+}
+
+.gsap {
+    position: absolute;
+    bottom: 15%;
+    left: 15%;
+}
+
+.git {
+    position: absolute;
+    bottom: 20%;
+    right: 15%;
+}
+
+.react {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+}
+
+/* My Work Section Styles */
+.my-work {
+    background: url('./images/about-background.jpg')center center/cover no-repeat;
+    overflow: hidden;
+    color: #fff;
+}
+
+.my-work h1 {
+    margin: 50px 0;
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+}
+
+.my-work-container {
+    height: 60%;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.work-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.work-cards a {
+    color: #fff;
+}
+
+.work-cards img {
+    width: clamp(16rem, 20vw, 30rem);
+    margin: 0 auto;
+}
+
+.work-cards {
+    position: relative;
+}
+
+.work-info {
+    position: absolute;
+    top: 10%;
+}
+
+.work-info h3 {
+    margin-bottom: 10px;
+}
+
+.my-work:after {
 content: "";
   position: absolute;
   width: 200%;
@@ -234,12 +333,131 @@ content: "";
   transform: rotate(210deg);
 }
 
-.box3 {
-    background: blue;
+/* Contact Me Section Styles */
+.contact-me {
+    color: #fff;
     overflow: hidden;
+    font-family: 'Poppins', sans-serif;
 }
 
-.box3:after {
+.contact-heading {
+    text-align: center;
+    font-size: clamp(1.5rem, 2.5vw, 2.8rem);
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 50px;
+}
+
+.contact-me-container {
+    width: clamp(17rem, 20vw, 35rem);
+    /* height: 800px;
+    width: 500px; */
+    margin: 0 auto;
+    margin-top: 80px;
+    padding-bottom: 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(11, 89, 244);
+    border-radius: 10px;
+    color: #fff;
+}
+
+.header {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+    font-size: 1.2rem;
+    letter-spacing: 1.3px;
+    text-align: center;
+    font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+}
+
+.header h3 {
+    font-weight: 800;
+    font-family: 'Poppins', sans-serif;
+}
+
+form {
+    margin-top: 175px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-me label {
+    text-align: left;
+    font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1px;
+}
+
+.form-divs {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.form-divs input {
+    font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+    padding: 5px 0;
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+
+.form-divs p {
+    font-size: 1rem;
+    letter-spacing: 1.1px;
+}
+
+.error-messages {
+    padding-top: 10px;
+}
+
+.message textarea {
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+    font-size: clamp(1.3rem, 1.5vw, 1.6rem);
+    padding: 10px;
+}
+
+.submit {
+    margin-top: 10px;
+    background: transparent;
+    color: #fff;
+    font-size: 1.3rem;
+    padding: 10px 20px;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-radius: 10px;
+}
+
+.submit button {
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    width: 100%;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+.error-messages {
+    display: none;
+    color: rgb(217, 27, 27);
+}
+.contact-me:after {
     content: "";
       position: absolute;
       width: 200%;
@@ -312,33 +530,47 @@ content: "";
     }
 }
 
-@media(max-width: 500px) {
-    .about-info {
-        width: 100%;
-        margin: 0 auto;
-        padding: 0 40px;
-        margin-top: 50px;
+@media(max-width: 700px) {
+    .about-section h1 {
+        margin-top: 35%;
     }
-    .about-section img {
-        top: 40%;
+    .about-info {
+        width: 75%;
     }
 }
 
-@media(max-width: 430px) {
-    .about-section {
-        padding-top: 40%;
-    }
+@media(max-width: 1400px) {
     .about-section img {
         top: 60%;
     }
 }
 
-@media(max-width: 360px) {
+@media(max-width: 400px) {
     .about-info {
-        padding: 0 20px;
+        padding: 0 10px;
+        width: 100%;
+        margin: 0 auto;
     }
     .about-section img {
+        top: 60%;
+        left: 25%;
+    }
+}
+
+@media(max-width: 300px) {
+    .about-section img {
         top: 65%;
-        left: 20%;
+    }
+    .about-info {
+        width: 100%;
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+}
+
+/* My Work Media Queries */
+@media(max-width: 510px) {
+    .my-work-container {
+        row-gap: 80px;
     }
 }

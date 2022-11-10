@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Courgette&family=Do+Hyeon&family=Koulen&family=Montserrat+Subrayada&family=Permanent+Marker&family=Poppins:wght@200&family=Roboto+Mono:wght@200&family=Skranji&family=Trade+Winds&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Mr. Wright's Portfolio</title>
 </head>
@@ -31,8 +34,8 @@
                 </div>
             </nav>
             <div class="landing-info">
-                <p>Hello,<br>
-                    My Name Is Chaunce And I'm A Front-End Developer
+                <p>
+                    Chaunce Wright <br/>Front-End Developer
                 </p>
                 <img src="./images/landing-image.png" class="landing-image" alt="">
                 <div class="pc-info">
@@ -51,17 +54,91 @@
         <!-- About Section -->
         <section class="about-section panels crimson">
             <h1>About Me</h1>
-            <p class="about-info">The world of web development is exciting and a great experience. In the beginning there were a lot of twists, turns, bouncing, and spins but I would'nt have it any other way. Building out of the ordinary websites with just enough animations to keep any user excited is what I love to do. The skills that I bring to the table include HTML5, CSS3, Javascript(ES6), GSAP, Figma, React, Next js, GIT and GitHub. Scroll down Check out a few of my latest projects in the next section.</p>
+            <p class="about-info">The world of web development is exciting and a great experience. In the beginning there were a lot of twists, turns, bouncing, and spins but I would'nt have had it any other way. Building out of the ordinary websites with just enough animations to keep any user excited is what I love to do. The skills that I bring to the table include HTML5, CSS3, Javascript(ES6), GSAP, Figma, React, Next js, GIT and GitHub. Scroll down to see a few of my projects in the next section.</p>
             <img src="./images/about-image.png" class="about-image" alt="">
+            <div class="about-icons">
+                <p class="html about-icon">HTML5</p>
+                <p class="css about-icon">CSS3</p>
+                <p class="javaScript about-icon">Javascript</p>
+                <p class="gsap about-icon">GSAP</p>
+                <p class="react about-icon">React</p>
+                <p class="git about-icon">GIT</p>
+            </div>
         </section>
 
-        <div class="box2 panels green">
-            <h1>Box 2</h1>
-        </div>
+        <!-- My Work Section -->
+        <section class="my-work panels">
+            <h1>Sites That I've Created</h1>
+            <div class="my-work-container">
+                    <div class="my-work1 work-cards">
+                        <a href=""><img src="./images/my-work-image.png" alt="">
+                        <div class="work-info">
+                            <h3>This Is Site Number 1</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi a assumenda aperiam. Fugiat, odit.</p>
+                        </div>
+                        </a>
+                    </div>
 
-        <div class="box3 panels blue">
-            <h1>Box 3</h1>
-        </div>
+                    <div class="my-work2 work-cards">
+                        <a href=""><img src="./images/my-work-image.png" alt="">
+                        <div class="work-info">
+                            <h3>This Is Site Number 2</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi a assumenda aperiam. Fugiat, odit.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="my-work3 work-cards">
+                        <a href=""><img src="./images/my-work-image.png" alt="">
+                        <div class="work-info">
+                            <h3>This Is Site Number 3</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi a assumenda aperiam. Fugiat, odit.</p>
+                        </div>
+                        </a>
+                    </div>
+
+                    <div class="my-work4 work-cards">
+                        <a href=""><img src="./images/my-work-image.png" alt="">
+                        <div class="work-info">
+                            <h3>This Is Site Number 4</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti quasi a assumenda aperiam. Fugiat, odit.</p>
+                        </div>
+                        </a>
+                    </div>
+            </div>
+        </section>
+
+        <!-- Contact Me Section -->
+        <section class="contact-me panels blue">
+            <h1 class="contact-heading">Let's Get In Touch</h1>
+            <div class="contact-me-container">
+                <div class="header">
+                    <h3>Please Enter Your Information</h3>
+                </div>
+                    <form action="https://formsubmit.co/chauncew1137@gmail.com" method="POST" class="form" id="form">
+                        <label for="userName">Name</label>
+                        <div class="user-name-div form-divs">
+                            <input type="text" id="userName" name="userName" >
+                            <p class="user-error-message error-messages">Please Enter Your Name</p>
+                        </div>
+        
+                        <label for="email">Email</label>
+                        <div class="email-div form-divs">
+                            <input type="text" id="email" name="email">
+                            <p class="email-error-message error-messages">Please Enter Your Email</p>
+                        </div>
+                    
+                        <label for="passwprd">Message</label>
+                        <div class="message form-divs">
+                            <textarea name="message" id="message" rows="8"></textarea>
+                            <p class="message-error-message error-messages">Please Enter Your Message</p>
+                        </div>
+                        <div class="submit">
+                            <button type="submit">Submit Form</button>
+                        </div>
+                    </form>
+            </div>
+        </section>
     </div>
 
 
